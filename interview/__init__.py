@@ -4,6 +4,10 @@ app = Flask(__name__)
 def hello():
     return render_template('welcome.html')
 
+@app.route("/pretty")
+def pretty():
+	return render_template('pretty.html')
+
 @app.route("/data")
 def show_data():
    #file_name = "/var/www/interview/interview/firstlines.log"
