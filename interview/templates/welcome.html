@@ -1,3 +1,20 @@
 <!doctype html>
 <title>Euclid Platform Interview</title>
-"Welcome to Euclid's Interview! OMG"
+<h1>Welcome to Euclid's Interview!</h1><br>
+ The basic goal of this technical evaluation is to give us some idea of your technical expertise with a relatively straightforward problem. We will expect an answer within one hour. When you finish, please send your code/answers to paul@euclidanalytics.com.If you don't finish everything, feel free to send us what you have as completion is not necessary to pass. So without further ado...<br><br>
+<b>Problem</b>: We've uploaded a sample of our raw data here at <a href='http://interview.euclidanalytics.com/data'>http://interview.euclidanalytics.com/data</a> 
+<br><br>
+Lines will either be a date timestamp or else a log line that begins with either INFO or WARN and is followed by a json data structure looking something like this:
+<br><br>
+{"pf":11,"sn":"00:18:0A:35:44:F2","vs":3,"ht":[{"ss":-71,"ct":1435100343,"s3":-357911,"ot":1435100343,"si":"x0df11f201d334525","s2":5041,"ap":0,"cn":1,"sm":"444C0C","sl":-71,"sh":-71}],"sq":0}
+<br><br>
+The important fields for this exercise are the "sn","si" and "ss" fields.
+Using the language of your choice, parse this data and answer the following questions:
+<h3><i>Questions:</i></h3>
+	<li>How many INFO log lines are there?</li>
+	<li>How many WARN log lines are there?</li>
+	<li>How many unique sn values are there?</li>
+	<li>How many unique si values are there?</li>
+	<li>What is max value for ss? (note, max ss is a value that is closest to 0 without being positive)</li>
+
+
