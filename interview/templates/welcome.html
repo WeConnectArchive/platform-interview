@@ -1,23 +1,48 @@
 <!doctype html>
+      <div class="container">
 
-<title>Euclid Platform Interview</title>
-<h1>Welcome to Euclid's Interview!</h1><br>
- The basic goal of this technical evaluation is to give us some idea of your technical expertise with a relatively straightforward problem. We will expect an answer within one hour. When you finish, please send your code/answers to paul@euclidanalytics.com. So without further ado...<br><br>
+  <div class="container theme-showcase" role="main">
+  	      <div class="alert alert-info" role="alert">
+        <h1>Euclid Analytics</h1>
+      </div>
+<title>Euclid Analytics</title>
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h2>Welcome to Euclid's Platform Interview!</h1>
+        <p> The basic goal of this technical evaluation is to give us some idea of your technical expertise with a relatively straightforward problem. We will expect an answer within one hour. When you finish, please send your code/answers to paul@euclidanalytics.com. So without further ado...<br><br>
 <b>Problem</b>: We've uploaded a sample of our raw data here at <a href='http://interview.euclidanalytics.com/data'>http://interview.euclidanalytics.com/data</a> 
 <br><br>
 Lines will either be a date timestamp or else a log line that begins with either INFO or WARN and is followed by a json data structure looking something like this:
 <br><br>
-{"pf":11,"sn":"00:18:0A:35:44:F2","vs":3,"ht":[{"ss":-71,"ct":1435100343,"s3":-357911,"ot":1435100343,"si":"x0df11f201d334525","s2":5041,"ap":0,"cn":1,"sm":"444C0C","sl":-71,"sh":-71}],"sq":0}
+{"pf":11,"sn":"00:18:0A:35:44:F2","vs":3,"ht":[{"ss":-71,"ct":1435100343,"s3":-357911,"ot":1435100343,"si":"x0df11f201d334525",<br>"s2":5041,"ap":0,"cn":1,"sm":"444C0C","sl":-71,"sh":-71}],"sq":0}
 <br><br>
 The important fields for this exercise are the "sn","si" and "ss" fields.
 Using the language of your choice, parse this data and answer the following questions:
-<h3><i>Questions:</i></h3>
+<h3><b>Questions:</b></h3>
+<ol type="1">
 	<li>How many INFO log lines are there?</li>
 	<li>How many WARN log lines are there?</li>
 	<li>How many unique sn values are there?</li>
 	<li>How many unique si values are there?</li>
 	<li>What is max value for ss? (note, max ss is a value that is closest to 0 without being positive)</li>
-
+</ol>
 
 <br><br>
 If you don't finish everything, feel free to send us what you have as completion is not necessary to pass, we just want to see how you work! 
+</p>
+      </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</html>
